@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Train Your Brain</string>
+    <string name="intro">Welome to Train our Brain where your math skills will be put our test. </string>
+    <string name="contlabel">Continue</string>
+    <string name="newlabel">New Game</string>
+    <string name="abtlabel">About</string>
+    <string name="abttext">\ Welcome to Train Your Brain. This is the simple arithmetic game to test your knowledge. You will be asked simple arithmetic quesions and you have to answer those questions correctly.</string>
+    <string name="exitlabel">Exit</string>
+    <string name="difflabel">Difficulty</string>
+    <string name="novuser">Novice</string>
+    <string name="easyuser">Easy</string>
+    <string name="meduser">Medium</string>
+    <string name="guru">Guru</string>
+    <string name="game_title">Game</string>
+    <string name="no_moves_label">No moves</string>
+    <string name="keypad_title">Keypad</string>
+</resources>
