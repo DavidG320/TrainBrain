@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Train Your Brain</string>
-    <string name="intro">Welome to Train our Brain where your math skills will be put our test. </string>
+    <string name="app_name">Train Brain</string>
+    <string name="intro">Welcome to Train Brain where your math skills will be put our test. </string>
     <string name="contlabel">Continue</string>
     <string name="newlabel">New Game</string>
     <string name="abtlabel">About</string>
-    <string name="abttext">\ Welcome to Train Your Brain. This is the simple arithmetic game to test your knowledge. You will be asked simple arithmetic quesions and you have to answer those questions correctly.</string>
+    <string name="abttext">\ Welcome to Train Brain. This is the simple arithmetic game to test your knowledge. You will be asked simple arithmetic quesions and you have to answer those questions correctly.</string>
     <string name="exitlabel">Exit</string>
     <string name="difflabel">Difficulty</string>
     <string name="novuser">Novice</string>
