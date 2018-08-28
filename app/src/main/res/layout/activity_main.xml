@@ -7,41 +7,69 @@
     tools:context="com.example.davidg.trainbrain.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.00"
-        android:text="@string/intro" />
+        android:text="@string/intro"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/newg"
         android:layout_width="129dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
         android:orientation="vertical"
-        android:text="@string/newlabel" />
+        android:text="@string/newlabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/cont"
         android:layout_width="129dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        android:text="@string/contlabel" />
+        android:text="@string/contlabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newg" />
 
     <Button
         android:id="@+id/abt"
         android:layout_width="129dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        android:text="@string/abtlabel" />
+        android:text="@string/abtlabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cont" />
 
     <Button
         android:id="@+id/exit"
         android:layout_width="129dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        android:text="@string/exitlabel" />
+        android:text="@string/exitlabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abt" />
 
 </android.support.constraint.ConstraintLayout>

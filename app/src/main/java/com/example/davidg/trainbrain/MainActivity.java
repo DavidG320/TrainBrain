@@ -1,11 +1,17 @@
 package com.example.davidg.trainbrain;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private static final String TAG = "Train" ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +43,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 finish();
                 break;
 
-//            case R.id.newg:
-//                openNewGameDialog();
-//                break;
+            case R.id.newg:
+                openNewGameDialog();
+                break;
     }
 }
 
+
+    private void openNewGameDialog() {     //opens a dialog where user needs to choose the level of difficulty.
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.difflabel)
+                .setItems(R.array.difficulty,
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface
+                                                        dialoginterface, int i) {
+                                startGame(i);
+                            }
+                        })
+                .show();
+        // TODO Auto-generated method stub
+
+    }
+
+    private void startGame(int i) {
+
+        Log.d(TAG, "clicked on " + i);
+        Intent intent = new Intent(this, Game.class);
+
+        intent.putExtra(Game.diffkey, i);
+
+        startActivity(intent);
+
+
+    }
 
 }
