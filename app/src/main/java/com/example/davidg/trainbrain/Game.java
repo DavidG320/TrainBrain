@@ -104,7 +104,7 @@ public class Game extends AppCompatActivity implements OnClickListener {
 
     private void chooseQuestion() {
 
-        answerTxt.setText( "=?" );
+        answerTxt.setText( "?" );
 
         operator = random.nextInt( operators.length );
 
@@ -146,7 +146,7 @@ public class Game extends AppCompatActivity implements OnClickListener {
         }
 
         // show question
-        question.setText( operand1 + " " + operators[operator] + " " + operand2 );
+        question.setText( operand1 + " " + operators[operator] + " " + operand2 + " = ");
 
     }
 
@@ -168,16 +168,17 @@ public class Game extends AppCompatActivity implements OnClickListener {
                 // check we have an answer
                 if (!answerContent.endsWith( "?" )) {
                     // get number
-                    int enteredAnswer = Integer.parseInt( answerContent );
+                    int enteredAnswer = Integer.parseInt( answerContent );  // converts the string to integer for easy comparison
                     // get score
                     int exScore = getScore();
                     // check answer
-                    if (enteredAnswer == answer) {
+                    if (enteredAnswer == answer) {  //comparing the given answer with the correct answer
                         // correct
-                        scoreTxt.setText (exScore + 1);
+                        int currScore = exScore + 1;     //adding 1 to the score that is already there
+                        scoreTxt.setText (Integer.toString( currScore ));   //converting integer to string and displaying the new score.
                     } else {
                         // incorrect
-                        scoreTxt.setText(exScore);
+                        scoreTxt.setText(Integer.toString( exScore ));
                     }
                 }
 
@@ -187,12 +188,12 @@ public class Game extends AppCompatActivity implements OnClickListener {
 
 
             case R.id.dlt:
-                answerTxt.setText( "=?" );
+                answerTxt.setText( "?" );
                 break;
 
             case R.id.one:
                 if (answerTxt.getText().toString().endsWith( "?" )) // check if the answer box has question mark or not
-                    answerTxt.setText( "= " + "1" );   // replacing the question mark
+                    answerTxt.setText("1" );   // replacing the question mark
                 else
                     answerTxt.append( "" + "1" );      //add the number to existing number if no question mark.
 
@@ -200,59 +201,59 @@ public class Game extends AppCompatActivity implements OnClickListener {
 
             case R.id.two:
                 if (answerTxt.getText().toString().endsWith( "?" ))
-                    answerTxt.setText( "= " + "2" );
+                    answerTxt.setText("2" );
                 else
                     answerTxt.append( "" + "2" );
                 break;
 
             case R.id.three:
                 if (answerTxt.getText().toString().endsWith( "?" ))
-                    answerTxt.setText( "= " + "3" );
+                    answerTxt.setText("3" );
                 else
                     answerTxt.append( "" + "3" );
                 break;
 
             case R.id.four:
                 if (answerTxt.getText().toString().endsWith( "?" ))
-                    answerTxt.setText( "= " + "4" );
+                    answerTxt.setText("4" );
                 else
                     answerTxt.append( "" + "4" );
                 break;
 
             case R.id.five:
                 if (answerTxt.getText().toString().endsWith( "?" ))
-                    answerTxt.setText( "= " + "5" );
+                    answerTxt.setText( "5" );
                 else
                     answerTxt.append( "" + "5" );
                 break;
 
             case R.id.six:
                 if (answerTxt.getText().toString().endsWith( "?" ))
-                    answerTxt.setText( "= " + "6" );
+                    answerTxt.setText("6" );
                 else
                     answerTxt.append( "" + "6" );
                 break;
             case R.id.seven:
                 if (answerTxt.getText().toString().endsWith( "?" ))
-                    answerTxt.setText( "= " + "7" );
+                    answerTxt.setText("7" );
                 else
                     answerTxt.append( "" + "7" );
                 break;
             case R.id.eight:
                 if (answerTxt.getText().toString().endsWith( "?" ))
-                    answerTxt.setText( "= " + "8" );
+                    answerTxt.setText( "8" );
                 else
                     answerTxt.append( "" + "8" );
                 break;
             case R.id.nine:
                 if (answerTxt.getText().toString().endsWith( "?" ))
-                    answerTxt.setText( "= " + "9" );
+                    answerTxt.setText( "9" );
                 else
                     answerTxt.append( "" + "9" );
                 break;
             case R.id.zero:
                 if (answerTxt.getText().toString().endsWith( "?" ))
-                    answerTxt.setText( "= " + "0" );
+                    answerTxt.setText( "0" );
                 else
                     answerTxt.append( "" + "0" );
                 break;
