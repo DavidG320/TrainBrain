@@ -14,4 +14,13 @@ public class ExampleUnitTest {
     public void addition_isCorrect() throws Exception {
         assertEquals( 4, 2 + 2 );
     }
+
+
+    @Test
+    public void isclear_working () throws Exception{
+       final  Game  game = new Game();
+
+
+
+    }
 }

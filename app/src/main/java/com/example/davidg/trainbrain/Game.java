@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Game extends AppCompatActivity implements OnClickListener {
@@ -54,7 +53,7 @@ public class Game extends AppCompatActivity implements OnClickListener {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.gamescreen );
+        setContentView( R.layout.activity_gamescreen );
         question = (TextView) findViewById( R.id.question );
         answerTxt = (TextView) findViewById( R.id.answerTxt );
 

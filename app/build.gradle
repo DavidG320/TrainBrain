@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.example.davidg.trainbrain"
-        minSdkVersion 25
+        minSdkVersion 24
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
